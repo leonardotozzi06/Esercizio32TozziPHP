@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina di Presentazione</title>
+</head>
+
+<body>
+    <h1>Inserisci la tua recensione</h1>
+    <form action="script.php" method="POST">
+        <label for="data">Data della recensione:</label>
+        <input type="date" id="data" name="data" required><br><br>
+
+        <label for="voto">Voto (da 1 a 5):</label>
+        <input type="number" id="voto" name="voto" min="1" max="5" required><br><br>
+
+        <input type="submit" value="Invia">
+    </form>
+
+    <br><br>
+    <a href="risultati.php">Vai ai risultati</a>
+</body>
+
+</html>
